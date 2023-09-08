@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-unit = 1
+unit = 0
 all = 0
 st.title('BUNTU GPA CALCULATOR')
 
@@ -12,7 +12,7 @@ for i in range(a):
     if n:
         u =int(st.number_input(f'{n} UNIT', min_value=1, max_value=5 , step=1))
         s = int(st.number_input(f'{n} SCORE', min_value=0, max_value=100 , step=1))
-        unit += u -1
+        unit += u 
         if s >= 70: 
             sum = u * 4 
         elif 60 <= s <= 69:
